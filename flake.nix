@@ -24,6 +24,7 @@
 
         nixos-cosmic = {
             url = "github:lilyinstarlight/nixos-cosmic";
+            inputs.nixpkgs.follows = "nixpkgs";
         };
 
         spicetify-nix = {
@@ -40,6 +41,9 @@
             config = {
                 allowUnfree = true;
             };
+            overlays = with inputs; [
+                nixos-cosmic.overlays.default
+            ];
         };
         lib = nixpkgs.lib;
     in
