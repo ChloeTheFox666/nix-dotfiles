@@ -62,6 +62,7 @@
                 ./system/services.nix
                 ./system/users.nix
                 ./system/virtualization.nix
+                ./system/containers.nix
 
                 #Home manager
                 home-manager.nixosModules.home-manager
