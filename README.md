@@ -1,0 +1,1 @@
+Henlo. I'm stupid but decided to install nixos. This is my config. I do not recommend anyone use any of it since it's made by two neurotic trans women in a university dorm room. Anyways glhf looking through my dumb shit :3 
