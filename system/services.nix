@@ -9,6 +9,8 @@
       package = pkgs.mullvad-vpn;
     };
 
+    logmein-hamachi.enable = true;
+
     pipewire = {
       enable = true;
       alsa.enable = true;

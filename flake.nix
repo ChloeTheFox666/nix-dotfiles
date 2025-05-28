@@ -1,5 +1,5 @@
 {
-    inputs = {
+   inputs = {
         nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
         home-manager = {
@@ -22,11 +22,6 @@
             url = "gitlab:doronbehar/nix-matlab";
         };
 
-        nixos-cosmic = {
-            url = "github:lilyinstarlight/nixos-cosmic";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-
         spicetify-nix = {
             url = "github:Gerg-L/spicetify-nix";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -42,7 +37,7 @@
                 allowUnfree = true;
             };
             overlays = with inputs; [
-                nixos-cosmic.overlays.default
+                # nixos-cosmic.overlays.default
             ];
         };
         lib = nixpkgs.lib;

@@ -24,5 +24,8 @@
 
     tor-browser
     deluge
+
+    librecad
+
   ];
 }
