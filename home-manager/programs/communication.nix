@@ -9,5 +9,7 @@
     zoom-us
 
     thunderbird
+
+    haguichi
   ];
 }
