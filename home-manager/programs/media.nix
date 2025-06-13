@@ -1,15 +1,5 @@
 { pkgs, lib, makeWrapper,  ... }:
 
-let
-  puryfi-video-processor = pkgs.callPackage ../../packages/puryfi-video-processor.nix {
-  tensorflow = pkgs.libtensorflow;
-#   inherit lib stdenv;
-  fetchurl = lib.fetchurl;
-  bash = pkgs.bash;
-  makeWrapper = lib.makeWrapper;
-  ffmpeg = pkgs.ffmpeg;
-  };
-in
 {
   imports = [
     ./media/spicetify.nix
@@ -36,7 +26,5 @@ in
     deluge
 
     librecad
-
-    puryfi-video-processor
   ];
 }
