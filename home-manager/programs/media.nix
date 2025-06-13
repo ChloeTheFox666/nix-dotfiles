@@ -1,4 +1,4 @@
-{ pkgs, lib,  ... }:
+{ pkgs, lib, makeWrapper,  ... }:
 
 let
   puryfi-video-processor = pkgs.callPackage ../../packages/puryfi-video-processor.nix {
