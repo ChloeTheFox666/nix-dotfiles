@@ -1,9 +1,9 @@
-{ pkgs, lib, stdenv,  ... }:
+{ pkgs, lib,  ... }:
 
 let
   puryfi-video-processor = pkgs.callPackage ../../packages/puryfi-video-processor.nix {
   tensorflow = pkgs.tensorflow;
-  inherit lib stdenv;
+#   inherit lib stdenv;
   fetchurl = lib.fetchurl;
   bash = pkgs.bash;
   makeWrapper = lib.makeWrapper;
