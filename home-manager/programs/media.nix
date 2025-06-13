@@ -1,5 +1,8 @@
 { pkgs, ... }:
 
+let
+  puryfi-video-processor = pkgs.callPackage ../../packages/puryfi-video-processor.nix { };
+in
 {
   imports = [
     ./media/spicetify.nix
@@ -27,5 +30,6 @@
 
     librecad
 
+    puryfi-video-processor
   ];
 }
