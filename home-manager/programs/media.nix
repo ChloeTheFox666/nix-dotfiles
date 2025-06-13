@@ -1,7 +1,14 @@
-{ pkgs, ... }:
+{ pkgs, lib, stdenv,  ... }:
 
 let
-  puryfi-video-processor = pkgs.callPackage ../../packages/puryfi-video-processor.nix { };
+  puryfi-video-processor = pkgs.callPackage ../../packages/puryfi-video-processor.nix {
+  tensorflow = pkgs.tensorflow;
+  inherit lib stdenv;
+  fetchurl = lib.fetchurl;
+  bash = pkgs.bash;
+  makeWrapper = lib.makeWrapper;
+  ffmpeg = pkgs.ffmpeg;
+  };
 in
 {
   imports = [
