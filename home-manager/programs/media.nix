@@ -2,7 +2,7 @@
 
 let
   puryfi-video-processor = pkgs.callPackage ../../packages/puryfi-video-processor.nix {
-  tensorflow = pkgs.tensorflow;
+  tensorflow = pkgs.libtensorflow;
 #   inherit lib stdenv;
   fetchurl = lib.fetchurl;
   bash = pkgs.bash;
