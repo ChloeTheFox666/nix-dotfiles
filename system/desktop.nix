@@ -4,10 +4,14 @@
   i18n.defaultLocale = "en_US.UTF-8";
   time.timeZone = "Europe/Bucharest";
 
-  services.displayManager.ly.enable = true;
+#   services.displayManager.ly.enable = true;
+
   services.desktopManager.plasma6.enable = true;
 
 #   services.displayManager.cosmic-greeter.enable = true;
+
+  services.displayManager.sddm.enable = true;
+
   services.desktopManager.cosmic.enable = true;
 
   environment = {
