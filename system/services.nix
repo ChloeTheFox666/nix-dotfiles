@@ -40,6 +40,8 @@
     };
 
     fwupd.enable = true;
+
+    flatpak.enable = true;
   };
 
 
