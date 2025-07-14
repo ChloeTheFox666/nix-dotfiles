@@ -39,5 +39,6 @@
 
     # Work stuff
     picocom
+    arduino
   ];
 }
