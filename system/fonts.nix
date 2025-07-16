@@ -5,6 +5,8 @@
     packages = with pkgs; [
       corefonts
 
+      liberation_ttf_v1
+
       noto-fonts-color-emoji
 
       monocraft
