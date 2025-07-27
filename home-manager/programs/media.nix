@@ -14,7 +14,6 @@
     gimp
     obs-studio
 
-
     onlyoffice-bin
     libreoffice
 
@@ -26,5 +25,7 @@
     deluge
 
     librecad
+
+    brasero
   ];
 }
