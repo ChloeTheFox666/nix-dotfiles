@@ -20,7 +20,7 @@
       isNormalUser = true;
       useDefaultShell = true;
       description = "chloethefox666";
-      extraGroups = [ "networkmanager" "wheel" "dialout" "plugdev" "adbusers" "gamemode" "docker" "kvm" "libvirtd" ];
+      extraGroups = [ "networkmanager" "wheel" "dialout" "plugdev" "adbusers" "gamemode" "docker" "kvm" "libvirtd" "cdrom" ];
       shell = pkgs.zsh;
     };
 
