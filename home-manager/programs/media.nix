@@ -27,5 +27,6 @@
     librecad
 
     brasero
+    puddletag
   ];
 }
